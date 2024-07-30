@@ -1,0 +1,398 @@
+body{
+    background: #A1644B;
+    font-family: 'Benne', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #C9D1D8;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Benne';
+    src: url("../font/Benne-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url("../font/Exo-Black.ttf");
+}
+@font-face {
+    font-family: 'Gluten';
+    src: url("../font/Gluten-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+    font-family: 'Grand';
+    src: url("../font/Grandstander-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: 'Jersey';
+    src: url("../font/Jersey15-Regular.ttf");
+}
+@font-face {
+    font-family: 'Kurale';
+    src: url("../font/Kurale-Regular.ttf");
+}
+@font-face {
+    font-family: 'Sevillana';
+    src: url("../font/Sevillana-Regular.ttf");
+}
+
+
+p{
+    margin-top: 1%;
+    font-size: 1em;
+    padding-right: 4%;
+    
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: 0.3s;
+} 
+
+
+header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #A83736;
+    color: #1E0D26;
+}
+
+/*Page Navigation*/
+#flex-container{
+    background-color: #2b3b5f;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 1.5em;
+    display: flex;
+    padding-left: 13%;
+}
+
+a{
+    color:#C9D1D8;
+    margin-right: 4%;
+    text-decoration: none;
+}
+
+a.nav:visited{
+    color: #232b41;
+}
+
+a.nav{
+    color: #232b41;
+}
+
+a.nav:hover{
+    color: #1E0D26;
+}
+
+a:visited{
+    color:#C9D1D8;
+}
+
+a:hover{
+    color: #1E0D26;
+}
+
+a:active {
+    color: green; 
+}
+
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+/* Grids in main */
+main{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 2em;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 2%;
+  }
+#grid1{
+    margin-top: 5%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#grid2{
+    background-color: #A83736;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+
+#grid3{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+
+}
+
+#grid4{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+
+}
+
+#grid5{
+    background-color: #A83736;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+#grid6{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    padding-bottom: 10%;
+}
+.char{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Interpret Page*/
+.grid-container2 {
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+.gr1, .gr2, .gr3, .gr4 {
+    height: 20em;
+}
+.gr1, .gr2{
+    margin-top: 5%;
+}
+
+.gr1{
+    background-image: url('../images/kiki-bg.png');
+    background-size:cover;
+}
+.gr4{
+    background-image: url('../images/jiji-bg.jpeg');
+    background-size: cover; 
+}
+
+.inter{
+    margin-top: 10%;
+    padding: 2%;
+    font-size: 0.7em;
+}
+
+
+/* Plot Page*/
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#gri1{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center; 
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#gri1, #gri2{
+    align-items: center;
+    width: 100%;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#plot{
+    margin-top: 10%;
+    width: 90%;
+    font-size: 0.7em;
+    word-wrap: break-word; 
+}
+#create{
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 1500px){
+    .grid-container3, .flex-container2{
+        grid-template-columns: 1fr, 1fr;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .grid-container, .grid-container2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    .grid-container3{
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    p, #create, .inter{
+        font-size: 0.5em;
+    }
+
+    .inter{
+        padding-top: 25%;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .grid-container, .grid-container2, .grid-container3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 50%;
+        padding: 5%;
+        padding-top: 10%;
+    }
+
+    gr
+
+    #flex-container{
+        font-size: 0.6em;
+    }
+
+     #grid3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    #grid4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    #grid5 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+
+    #grid6 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 6;
+        padding-bottom: 50%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    p{
+        font-size: .5em;
+    }
+
+    #create{
+        font-size: .5em;
+        padding-bottom: 30%;
+    }
+
+    footer{
+        margin-top: 25%;
+    }
+
+    /*Page 2*/
+    .inter{
+        font-size: 0.5em;
+    }
+    .gr3 {
+        order: 2; 
+    }
+
+    .gr4 {
+        order: 1; 
+    }
+
+    /*Page 3*/
+
+    .scene {
+        width: 90%; 
+        max-width: 300px; 
+        margin-bottom: 10px; 
+    }
+
+    .grid-container3, .flex-container2{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #plot{
+        font-size: .5em;
+        padding-top: 20%;
+        max-width: 700px;
+        margin: 5% auto;
+    }
+
+}
+
+footer{
+    background-color: #A83736;
+    bottom:0%;
+    color: #232b41;
+    margin-top: 10%;
+    width: 100%;
+    padding-top: 1%;
+}
+
+footer p{
+    font-size: 0.8em;
+}
