@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tina Chen Resume</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type = "text/css" href="./styles/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+	<audio controls autoplay loop>
+		<source src="./totoro.mp3" type="audio/mp3">
+	</audio>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="./index.html">About Me</a></li>
+				<li><a href="./pages/skill.html">Skills and Tools</a></li>
+				<li><a href="./pages/experience.html">Experiences and Projects</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="grid-container">
+			<div class="intro-area">
+				<h1>Tina Chen</h1>
+				<h4>Game and Software Developer</h4>
+				<svg version="1.1" width ="405" height="300">
+					<defs>
+					  <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+						<stop offset="0%" stop-color="cyan" stop-opacity="0.8" />
+						<stop offset="100%" stop-color="yellow" stop-opacity="0.8" />
+					  </linearGradient>
+			  
+					  <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+						<stop offset="0%" stop-color="magenta" stop-opacity="0.8" />
+						<stop offset="100%" stop-color="cyan" stop-opacity="0.8" />
+					  </linearGradient>
+			  
+					  <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+						<stop offset="0%" stop-color="yellow" stop-opacity="0.8" />
+						<stop offset="100%" stop-color="magenta" stop-opacity="0.8" />
+					  </linearGradient>
+					</defs>
+			  
+					<!--shape T-->
+					<rect id="mainRect" x="30" y="60" width="180" height="180" fill="url(#gradient1)"/>
+					
+					<rect class="filler" x="30" y="105" width="67.5" height="135"/>
+					<rect class="filler" x="150" y="105" width="67.5" height="135"/>
+				
+					<!-- Shape C -->
+					
+					<circle id="bigCircle" cx="277.5" cy="150" r="97.5" fill="url(#gradient2)"/>
+					
+					<ellipse cx="300" cy="150" rx="60" ry="45"/>
+					<ellipse cx="375" cy="135" rx="30" ry="30"/>
+					<ellipse cx="375" cy="165" rx="30" ry="30"/>
+				
+					<!-- Dot -->
+					<polygon points="150,240 210,240 180,195" fill="url(#gradient3)"/>
+				
+					<!-- Initials Text -->
+					<text x="120" y="195" fill="black" font-family="Helvetica" font-size="66">T.C.</text>
+				</svg>
+			</div>
+
+			<div id="a-g1">
+				<div class="subhead">
+					<h2> About Me </h2>
+				</div>
+				<div class="about-flex">
+					<img id="selfImg" src="./images/self.jpg" width="250px" height="310px" alt="photo of myself">
+					<p>
+						<strong>Location:</strong> Philadelphia, PA
+					</p>
+					<p>
+						<strong>Can Relocate?:</strong> Yes
+					</p>
+					<p>
+						<strong>Phone:</strong> (+1) 551-666-9571
+					</p>
+					<p>
+						<strong>Email:</strong> <a class="links" href="mailto:tinachen170@gmail.com">tinachen170@gmail.com</a>
+					</p>
+					<p>
+						<strong>Github:</strong> <a class="links" href="https://github.com/tc0610">tc0610</a>
+					</p>
+					<p>
+						<strong>LinkedIn:</strong> <a class="links" href="https://www.linkedin.com/in/tina-chen-283690261/">tina-chen-283690261</a>
+					</p>
+				</div>
+				
+			</div>
+
+			<div id="a-g2">
+				<div class="subhead">
+					<h2> Education</h2>
+				</div>
+
+
+				<div class="education-flex">
+					<h3><strong>NYU Shanghai </strong><i>Sep' 20 - May 24'</i></h3>
+					<p>
+						<strong>Degree:</strong> Bachelor of Science, Computer Science
+					</p>
+					<p>
+						<strong>GPA:</strong> 3.5
+					</p>
+					<p>
+						<strong>Relevant Courseworks:</strong>
+					</p>
+					<ul>
+						<li>Software Engineering</li>
+						<li>Algorithms</li>
+						<li>Operating Systems</li>
+						<li>Data Management and Analysis</li>
+						<li>Calculus</li>
+						<li>Discrete Math</li>
+						<li>Probability and Statistics</li>
+						<li>Data Structures</li>
+						<li>Functional Programming</li>
+
+					</ul>
+					<p>
+						<strong>Study Sites:</strong>		
+					</p>
+					<ul>
+						<li>NYU Paris <i>(Fall '22)</i></li>
+						<li>NYU New York <i>(Fall '23 - Spring '24) </i></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+		
+		</div>
+	</main>
+
+	<footer>
+		<a id="foot" href="./pages/plot.html"> Download Resume PDF</a>
+	</footer>
+	<script src="./js/script.js"></script> 
+</body>
+</html>
